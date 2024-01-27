@@ -17,7 +17,7 @@ function PageTransitions(){
     // Sections active class (on-click, console-log button element)
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;     // target the name of data-id from HTML and put it into a var 'id'
-        if id {
+        if (id) {
             // Remove selected from the other buttons
             sectBtns.forEach((btn) =>{
                 btn.classList.remove('active')
@@ -31,6 +31,7 @@ function PageTransitions(){
 
             // Whatever id is coming from the dataset is assigned to the element varaible
             const element = document.getElementById(id);
+            element.classList.add('active');
         }
     })
 }
