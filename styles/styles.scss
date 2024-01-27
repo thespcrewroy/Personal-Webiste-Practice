@@ -95,6 +95,13 @@ section{
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);                    // Center in the y-axis
+    .active-btn{                                    // Button surrounding the icon
+        background-color: var(--color-secondary) !important;
+        transition: all .4 ease-in-out;
+        i{                                          // Icon
+            color: var(--color-white) !important;
+        }
+    }
     .control{                                       // SASS allows nesting od HTML elements
         padding: 1rem;
         cursor: pointer;
