@@ -62,21 +62,25 @@ section{
 .sec1{
     display: none;                                  // I want to switch between section so do not display anything
     transform: translateY(0) scale(1);              // when sec1 is active, it is coming back to default section and animation comes it
+    background-color: rgba(161, 228, 38, 0.849);
 }
 
 .sec2{
     display: none;                                  // I want to switch between section so do not display anything
     transform: translateY(0) scale(1);              // when sec1 is active, it is coming back to default section and animation comes it
+    background-color: slateblue;
 }
 
 .sec3{
     display: none;                                  // I want to switch between section so do not display anything
-    transform: translateY(0) scale(1);              // when sec1 is active, it is coming back to default section and animation comes it
+    transform: translateY(0) scale(1);              // when sec1 is active, it is coming back to default section and animation comes in
+    background-color: rgb(146, 205, 90);
 }
 
 .sec4{
     display: none;                                  // I want to switch between section so do not display anything
     transform: translateY(0) scale(1);              // when sec1 is active, it is coming back to default section and animation comes it
+    background-color: rgb(194, 205, 90);
 }
 
 .sec5{
