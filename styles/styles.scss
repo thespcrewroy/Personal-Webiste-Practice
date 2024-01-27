@@ -5,6 +5,7 @@
     list-style: none;                           // no bullets
 }
 
+// Variables: allow the reuse of style settings much quicker
 :root{
     --color-primary: #191d2b;
     --color-secondary: #27AE60;
@@ -17,6 +18,8 @@
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);    // box shadow variable
 }
 
 body {
@@ -79,4 +82,35 @@ section{
 .sec5{
     display: none;                                  // I want to switch between section so do not display anything
     transform: translateY(0) scale(1);              // when sec1 is active, it is coming back to default section and animation comes it
+}
+
+// Icons
+.controls{                                          // Parent container
+    position: fixed;
+    z-index: 10;                                    // Always at the top
+    top: 50%;
+    right: 3%;                                      // Leave 3% space from the right
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);                    // Center in the y-axis
+    .control{                                       // SASS allows nesting od HTML elements
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-grey-4);      // background color
+        width: 55px;                                // Make icons rounded
+        height: 55px;                               // Make icons rounded
+        border-radius: 50%;                         // Make icons rounded
+        display: flex;                              // Center the icons
+        justify-content: center;                    // Center the icons
+        align-items: center;                        // Center the icons
+        margin: .7rem 0;                            // Spacing between icons
+        box-shadow: var(--box-shadow-1);            // Adds a box-shadow to icons
+        i{
+            font-size: 1.2rem;
+            color: var(--color-grey-2);
+            pointer-events: none;                   // When you click, the icon does not react to the mouse
+        }
+    }
 }
