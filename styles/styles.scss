@@ -88,6 +88,19 @@ section{
     transform: translateY(0) scale(1);              // when sec1 is active, it is coming back to default section and animation comes it
 }
 
+.active{
+    display: block;                                 // Only display the element that is active
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0)   // Perform animation
+        }
+        100%{
+            transform: translateY(0) scaleY(1)       // Reset translate and scales
+        }
+    }
+}
+
 // Icons
 .controls{                                          // Parent container
     position: fixed;

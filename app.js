@@ -14,7 +14,7 @@ function PageTransitions(){
         })
     }
 
-    // Sections active class (on-click, console-log button element)
+    // Sections active class (change active id to the element that was clicked)
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;     // target the name of data-id from HTML and put it into a var 'id'
         if (id) {
