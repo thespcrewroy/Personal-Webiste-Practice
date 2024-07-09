@@ -8,6 +8,13 @@ Tasks:
 - Do a tutorial on React, Typescript, Javascript, SCSS, and CSS before continuing
 - After this, finish the makeathon-2 project and AuthFit project before doing other personal project ideas
 
+```
+Portfolio Ideas ()
+* Utilize the first project of ThreeJS by making a tetrahedron with less triangles, where each triangle corresponds to a link (blog, portfolio, merch, contact, etc.)
+* Boid Flocks
+* ThreeJS Gallery for Portfolio Website
+```
+
 Sections
 
 - Blog Sections
